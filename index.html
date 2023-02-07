@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="estilo.css" />
+    <script src="index.js"></script>
     <title>Portfólio Marlon</title>
   </head>
     <body>
@@ -12,15 +13,13 @@
           <div class="menu">
             <h1>Marlon Pereira</h1>
             <ul>
-              <li class="active"><a>Habilidade</a></li>
-              <li>
-                <a href="https://github.com/Marlon1701" target="_blank"
-                  >Portfólio</a
-                >
+              <li class="active" onclick="onClickScroll('body-principal')"><a>Habilidade</a></li>
+              <li  onclick="onClickScroll('port')">
+                <a>Portfólio</a>
               </li>
-              <li><a>Experiência</a></li>
+              <li  onclick="onClickScroll('expe')"><a>Experiência</a></li>
             </ul>
-            <div class="botao">
+            <div class="botao"  onclick="onClickScroll('footer')">
               <button class="botao-contato">Contato</button>
             </div>
           </div>
@@ -36,7 +35,7 @@
                   Análise e desenvolvimento de sistema, com foco em desenvolvimento
                   web
                 </p>
-                <div class="button">
+                <div class="button"  onclick="onClickScroll('footer')">
                   <button class="button-contato">Entre em contato</button>
                 </div>
                 <div class="rede">
@@ -56,7 +55,7 @@
               </div>
             </div>
           </div>
-          <div class="body-principal">
+          <div class="body-principal" id="body-principal">
             <div class="body-title">
               <h1>Habilidades que</h1>
               <p>domino.</p>
@@ -156,7 +155,7 @@
             </div>
           </div>
         </div> 
-        <div class="port">
+        <div class="port" id="port">
           <div class="port-title">
               <h1>Portfólio de </h1>
               <p>Projetos.</p>
@@ -166,7 +165,7 @@
           <div class="projeto-port">
             <div class="caud">
               <div class="project-video">
-                <video controls autoplay loop width="800px" src="image/perfumaria.mp4">
+                <video controls autoplay loop width="800px" src="videos/perfumaria.mp4">
               </div>
               <div class="project-title">
                 <h1>Landing page Perfume</h1>
@@ -189,10 +188,10 @@
           <div class="projeto-port">
             <div class="caud">
               <div class="project-video">
-                <video controls autoplay loop width="800px" src="image/perfumaria.mp4">
+                <video controls autoplay loop width="800px" src="videos/portfolio.mp4">
               </div>
               <div class="project-title">
-                <h1>Landing page Perfume</h1>
+                <h1>Landing page Produtos</h1>
                 <p>Aplicação em HTML e CSS</p>
                 <div class="project-hospe">
                   <div class="git">
@@ -212,7 +211,7 @@
           <div class="projeto-port">
             <div class="caud">
               <div class="project-video">
-                <video controls autoplay loop width="800px" src="image/perfumaria.mp4">
+                <video controls autoplay loop width="800px" src="videos/landing page produstos.mp4">
               </div>
               <div class="project-title">
                 <h1>Landing page Perfume</h1>
@@ -233,7 +232,7 @@
             </div>
           </div>
         </div>
-        <div class="expe">
+        <div class="expe" id="expe">
           <div class="expe-title">
             <h1>Experiências</h1>
             <h2>profissionais.</h2>
@@ -262,7 +261,7 @@
             <p>Gerenciar o sistema SAP, lançar notas, alimentar planilha e receber materiais.</p>
           </div>
         </div>
-        <div class="footer">
+        <div class="footer" id="footer">
           <div class="footer-title">
             <h1>Como posso</h1>
             <h2>te ajudar?</h2>
