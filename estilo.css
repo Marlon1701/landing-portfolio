@@ -122,19 +122,20 @@ ul a:hover {
 .body-principal {
   display: flex;
   justify-content: center;
+  margin-left: 60px;
 }
 .body-title h1 {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
   margin: 0;
+  text-align: center;
 }
 .body-title p {
-  font-size: 50px;
+  font-size: 45px;
   margin-top: -3px;
   font-weight: bolder;
   color: #219653;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 .section-body {
   display: flex;
@@ -250,6 +251,7 @@ ul a:hover {
 .git {
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 .project-hospe img {
   margin-top: 5px;
@@ -341,4 +343,119 @@ h2 {
 }
 .footer-titulo h1 {
   margin-left: 80px;
+}
+
+@media only screen and (max-device-width: 450px) {
+  .menu {
+    padding: 0;
+    max-width: 500px;
+  }
+
+  .menu li a {
+    font-size: 15px;
+    padding: 0;
+  }
+  .menu h1 {
+    font-size: 15px;
+  }
+  .botao-contato {
+    font-size: 9px;
+    width: 65px;
+    height: 30px;
+    margin: 15px;
+  }
+  .img {
+    margin-top: 30px;
+  }
+  .img img {
+    height: 180px;
+    width: 180px;
+  }
+  .info h1 {
+    font-size: 30px;
+  }
+  .info p {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .rede {
+    display: flex;
+    justify-content: center;
+  }
+  .rede img {
+    width: 30px;
+  }
+  .section-body {
+    display: flex;
+    flex-direction: column;
+  }
+  .body-title {
+    margin-right: 70px;
+  }
+  .body-title h1 {
+    margin-left: 70px;
+    font-size: 30px;
+  }
+  .body-title p {
+    margin-left: 70px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .tag-h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .tag-principal {
+    margin-bottom: 10px;
+    height: 120vh;
+    width: 40vw;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fefefe;
+  }
+  .port-title h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .port-title p {
+    font-size: 30px;
+  }
+  .caud {
+    width: 30vw;
+    height: 50vh;
+    background-color: #fefefe;
+    border: 1px solid #ccc;
+    margin: auto;
+  }
+  .project-video video {
+    width: 30vw;
+  }
+  .project-title p {
+    font-size: 16px;
+  }
+  .expe-title h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .expe-title h2 {
+    font-size: 30px;
+  }
+  .experiencia {
+    width: 43vw;
+    padding: 10px;
+  }
+  .footer-title h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .footer-title h2 {
+    font-size: 30px;
+  }
+  .footer-titulo h1 {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 35px;
+  }
 }
